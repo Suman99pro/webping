@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  webping:
+    build: .
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    # Required for ping to work inside container
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
