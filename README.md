@@ -2,7 +2,8 @@
 
 A lightweight, web-based network ping tool with a real-time terminal-style interface. Check the reachability of any host or IP address directly from your browser.
 
-![WebPing Screenshot](https://via.placeholder.com/900x500/0a0c0f/00e5ff?text=WebPing)
+<img width="958" height="499" alt="image" src="https://github.com/user-attachments/assets/1a83582e-56f7-44e3-bf94-568daa88bebe" />
+
 
 ## Features
 
@@ -19,7 +20,7 @@ A lightweight, web-based network ping tool with a real-time terminal-style inter
 ### With Docker (recommended)
 
 ```bash
-docker compose up -d
+docker compose up -d --build
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
